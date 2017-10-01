@@ -1,3 +1,4 @@
+
 var HTTPS = require('https');
 var request = require('request');
 
@@ -82,15 +83,6 @@ function postMessage(text) {
 }
 
 /*
-  display env vars to console for debug
-*/
-function envVars() {
-  console.log('botID ' + botID, 'botName ' + botName + 'forwardingAddress ' + forwardingAddress );
-
-}
-
-/*
   make methods available to other scripts ie index.js
 */
 exports.respond = respond;
-exports.envVars = envVars;
