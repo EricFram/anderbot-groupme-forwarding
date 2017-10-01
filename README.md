@@ -27,6 +27,10 @@ Add the following config variables based on your bot configuration
 - BOT_NAME (custom name assigned when you register bot on GroupMe)
 - FORWARDING_ADDRESS (URL of your Slackbot)
 
+## TODOs
+
+- Remove debug echo in GroupMe channel 
+
 ## Notes
 
 The configuration of this bot was based off the GroupMe Node bot tutorial project. https://github.com/groupme/bot-tutorial-nodejs
