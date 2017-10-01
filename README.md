@@ -24,5 +24,5 @@ In your Heroku app, visit the settings tab and find the Config Variables section
 Add the following config variables based on your bot configuration
 
 - BOT_ID (random numbers and letters assigned when you register bot on GroupMe)
-- BOT_NAME (customer name assigned when you register bot on GroupMe)
+- BOT_NAME (custom name assigned when you register bot on GroupMe)
 - FORWARDING_ADDRESS (URL of your Slackbot)
