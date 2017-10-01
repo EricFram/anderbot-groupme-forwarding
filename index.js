@@ -38,3 +38,5 @@ function ping() {
   this.res.writeHead(200);
   this.res.end("anderbot-groupme-forwarding-C.");
 }
+
+bot.envVars();

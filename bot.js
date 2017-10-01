@@ -19,7 +19,7 @@ function respond() {
       postMessage(JSON.stringify(request));
       this.res.end();
     } else {
-      // postMessage("sending POST request to slack bot: " + JSON.stringify(request)); NOTE: removed for prod
+      postMessage("sending POST request to slack bot: " + JSON.stringify(request)); // NOTE: removed for prod
       postRequest(request); // send POST request to slack bot
       this.res.writeHead(200);
       this.res.end();
@@ -82,6 +82,15 @@ function postMessage(text) {
 }
 
 /*
-  make the respond method available to other scripts, in this case, index.js
+  display env vars to console for debug
+*/
+function envVars() {
+  console.log('botID ' + botID, 'botName ' + botName + 'forwardingAddress ' + forwardingAddress );
+
+}
+
+/*
+  make methods available to other scripts ie index.js
 */
 exports.respond = respond;
+exports.envVars = envVars;
