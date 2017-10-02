@@ -20,7 +20,7 @@ function respond() {
       postMessage(JSON.stringify(request));
       this.res.end();
     } else {
-      postMessage("sending POST request to slack bot: " + JSON.stringify(request)); // NOTE: removed for prod
+      // postMessage("sending POST request to slack bot: " + JSON.stringify(request)); // NOTE: removed for prod
       postRequest(request); // send POST request to slack bot
       this.res.writeHead(200);
       this.res.end();
