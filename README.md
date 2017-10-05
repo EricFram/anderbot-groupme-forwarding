@@ -29,7 +29,7 @@ Add the following config variables based on your bot configuration
 
 ## TODOs
 
-- Remove debug echo in GroupMe channel 
+- Functionality to respond to GroupMe messages with reminders and links to Slack channel  
 
 ## Notes
 
